@@ -1,0 +1,39 @@
+form {
+  font-size: 14px;
+}
+form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+  position: relative;
+}
+form .form-group label {
+  text-align: right;
+  display: inline-block;
+  color: #666666;
+  width: 180px;
+  line-height: 45px;
+  height: 45px;
+}
+form .form-group .form-input {
+  border: 1px solid #eeeeee;
+  color: #666666;
+  height: 100%;
+  width: calc(100% - 230px);
+  padding: 0px 10px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  display: inline-block;
+  line-height: 45px;
+  height: 45px;
+}
+form {
+  width: 600px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+#updateTip {
+  background: #457dd8;
+  color: #ffffff;
+}

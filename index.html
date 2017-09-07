@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/validateForm.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="lib/jquery-2.1.4.js"></script>
+    <script src="lib/jquery.lslValidateForm.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <h4>获取DataUrl</h4>
+            <input type="file" id="obtain-dataUrl" value="获取DataURL">
+            <textarea name=""  cols="100" rows="10" class="dataUrl"></textarea>
+        </div>
+
+
+        <form action="" novalidate data-validate-type="ls-h-validateForm">
+            <div class="form-group">
+                <label for="phone-code">用户名：</label>
+                <input type="text" class="form-input phone-code" id="phone-code" data-vtype data-vmsg="用户名不能为空" placeholder="请输入用户名" required />
+            </div>
+
+            <div class="form-group">
+                <label for="phone-code">手机号：</label>
+                <input type="text" class="form-input phone-code" id="phone" data-vtype="phone" data-vmsg="手机号格式有误" placeholder="请输入手机号"  />
+            </div>
+            <div class="form-group">
+                <label for="phone-code">固定电话：</label>
+                <input type="text" class="form-input phone-code"  data-vtype="fixedPhone" data-vmsg="固定电话格式有误" placeholder="请输入固定电话"  />
+            </div>
+
+            <div class="form-group">
+                <label for="phone-code">邮箱：</label>
+                <input type="text" class="form-input phone-code" id="email" data-vtype="email" data-vmsg="邮箱格式有误" placeholder="请输入邮箱" required />
+            </div>
+
+            <div class="form-group">
+                <label for="phone-code">身份证号：</label>
+                <input type="text" class="form-input phone-code"  data-vtype="identityID" data-vmsg="身份证号格式有误" placeholder="请输入身份证号" required />
+            </div>
+            <div class="form-group">
+                <label for="phone-code">数字3-6：</label>
+                <input type="text" class="form-input phone-code"  data-vtype="regexp" data-regexp="/^[\d]{3,6}$/g" data-vmsg="身份证号格式有误" placeholder="纯数字3-6" required />
+            </div>
+            <div class="form-group">
+                <label for="phone-code"></label>
+                <input type="button" class="form-input phone-code"  value="更新手机号提示" id="updateTip"/>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
