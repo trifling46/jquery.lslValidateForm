@@ -9,3 +9,10 @@
 2. 在需要jquery.lslValidateForm验证的表单中设置data-validate-type = 'ls-h-validateForm' 或ls-v-validateForm 并关闭默认验证novalidate
 3. data-vtype：表示需要验证类型，可取值required、fixedPhone、phone、email、identityID、regexp
 4. data-vmsg：表示tip 提示信息
+5. validateForm()：强制验证form表单
+6. updateTip(): 更新input tip提示
+
+```
+$("#phone").data("validateObj").updateTip('该手机号已注册');
+$(this).parents("form").data("validateObj").validateForm();
+```

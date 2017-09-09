@@ -13,4 +13,7 @@ $(function () {
     $("#updateTip").on("click",function () {
         $("#phone").data("validateObj").updateTip('该手机号已注册');
     })
+    $("#forceValidate").on("click",function () {
+        $(this).parents("form").data("validateObj").validateForm();
+    })
 })
