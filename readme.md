@@ -11,8 +11,3 @@
 4. data-vmsg：表示tip 提示信息
 5. validateForm()：强制验证form表单
 6. updateTip(): 更新input tip提示
-
-```
-$("#phone").data("validateObj").updateTip('该手机号已注册');
-$(this).parents("form").data("validateObj").validateForm();
-```
