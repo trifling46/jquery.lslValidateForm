@@ -36,4 +36,10 @@ form {
 #updateTip {
   background: #457dd8;
   color: #ffffff;
+  cursor: pointer;
+}
+#forceValidate {
+  background: #457dd8;
+  color: #ffffff;
+  cursor: pointer;
 }
